@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +57,7 @@ header ul li a {
     margin-left: 40px;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #E57455;
+    background: rgb(160, 160, 160);
     color: #fff;
     border-radius: 26px;
     font-weight: 500;
@@ -115,6 +119,7 @@ header ul li a {
 
 .content .imgBox img {
     max-width: 400px;
+    max-height: 300px;
 }
 
 .thumb {
