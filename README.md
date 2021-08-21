@@ -18,3 +18,5 @@ SEROMBOTAN : (http://4.bp.blogspot.com/-QIbvrItv45M/Vd5vqXJ63jI/AAAAAAAAABY/FfJw
 BEBEK TIMBUNGAN : (https://cdn.idntimes.com/content-images/community/2021/04/20210415-043951-329ae2b286ff7799fbbec7d4597d307a-8b180106880c900bf6081cb65ca4d619.jpg)
 TIPAT CANTOK : (https://www.tepiair.com/wp-content/uploads/2021/06/jual-tipat-cantok-sajian-ketupat-khas-bali-yang-merakyat-di-nusa-dua.png)
 RUJAK BULUNG RUMPUT LAUT : (https://ksmtour.com/media/images/articles6/rujak-bulung-kuah-pindang-khas-bali.jpg)
+TIPAT BLAYAG : (https://ksmtour.com/media/images/articles5/tipat-blayag-khas-bali.jpg)
+JUKUT ARES : (https://www.kintamani.id/wp-content/uploads/jukut-ares-bali-3-1024x683.jpg)
