@@ -11,3 +11,5 @@ Search Google for Image :  Nasi Tumpeng (https://www.google.com/url?sa=i&url=htt
                            Nasi Jinggo (https://amazingindonesia.id/wp-content/uploads/2019/05/Gambar-2.jpg)
                            Rendang (https://travistory.com/wp-content/uploads/2017/06/resep-rendang-750x478.jpg)
                            Dendeng Balado (https://asset.kompas.com/crops/eVUT_TbyT9rbV3Bz4_jW0JCcCgU=/0x333:1000x1000/750x500/data/photo/2020/08/02/5f26b02a99288.jpg)
+                           Bika Ambon (https://inibaru.id/media/6636/large/normal/0abe1e8d-9848-4109-9ddd-b785280cfc12__large.jpg)
+                           Pempek (https://assets.resepedia.id/assets/images/2020/08/1673915771704645-pempek-640.jpg)
