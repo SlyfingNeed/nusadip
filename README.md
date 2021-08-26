@@ -20,3 +20,8 @@ TIPAT CANTOK : (https://www.tepiair.com/wp-content/uploads/2021/06/jual-tipat-ca
 RUJAK BULUNG RUMPUT LAUT : (https://ksmtour.com/media/images/articles6/rujak-bulung-kuah-pindang-khas-bali.jpg)
 TIPAT BLAYAG : (https://ksmtour.com/media/images/articles5/tipat-blayag-khas-bali.jpg)
 JUKUT ARES : (https://www.kintamani.id/wp-content/uploads/jukut-ares-bali-3-1024x683.jpg)
+Rendang : (https://travistory.com/wp-content/uploads/2017/06/resep-rendang-750x478.jpg / https://cdn0-production-images-kly.akamaized.net/j-hPwRTgLA9ukyLRdKBYAz0dhf4=/578x0:2578x2000/640x640/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3282059/original/075075700_1604028408-shutterstock_1788721670.jpg)
+Mie Aceh : (https://www.blibli.com/friends/assets/2021/01/mie_aceh_2.jpg)
+Ayam Pop : (https://www.primarasa.co.id/images/images/Resep%20Ayam%20Pop.jpg)
+Sate Padang : (https://i.ytimg.com/vi/5dqRFFXEjS8/maxresdefault.jpg)
+Ikan Asam Padeh : (https://cdn.yummy.co.id/content-images/images/20210404/5TinX3pV04cS1Xk2ZpqMjh9X0N2rmrTk-31363137353131373836d41d8cd98f00b204e9800998ecf8427e_800x800.jpg)
