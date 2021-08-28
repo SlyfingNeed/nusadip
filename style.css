@@ -22,6 +22,11 @@ section {
     background: #fff;
 }
 
+.section {
+    width: 100%;
+    min-height: 100vh;
+}
+
 header {
     position: absolute;
     top: 0;
@@ -165,4 +170,11 @@ header ul li a {
     height: 100%;
     background: #E57455;
     clip-path: circle(500px at right 700px);
+}
+
+#gradientbg {
+    height: 100%;
+    line-height: 720px;
+    width: 50%;
+    background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
 }
