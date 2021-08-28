@@ -168,12 +168,32 @@ header ul li a {
     clip-path: circle(500px at right 700px);
 }
 
-#gradientbg {
+.section .disp {
+    display: flex;
+}
+
+.section .disp #gradientbg {
     height: 720px;
     width: 50%;
     background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
 }
 
-#gradientbg img {
+.section .disp #gradientbg img {
     padding: 0 100px;
+}
+
+.section .disp .textBox {
+    padding: 50px;
+}
+
+.section .disp .textBox h2 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section .disp .textBox p {
+    font-size: 24px;
+    font-weight: 400;
 }
