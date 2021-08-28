@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -173,8 +169,11 @@ header ul li a {
 }
 
 #gradientbg {
-    height: 100%;
-    line-height: 720px;
+    height: 720px;
     width: 50%;
     background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
+}
+
+#gradientbg img {
+    padding: 0 100px;
 }
