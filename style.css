@@ -166,3 +166,37 @@ header ul li a {
     background: #E57455;
     clip-path: circle(500px at right 700px);
 }
+
+.section .disp {
+    display: flex;
+}
+
+.section .disp #gradientbg {
+    height: 720px;
+    width: 50%;
+    background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
+}
+
+.section .disp #gradientbg img {
+    padding: 70px;
+    width: 500px;
+    height: 700px;
+}
+
+.section .disp .textBox {
+    padding: 50px;
+    width: 720px;
+}
+
+.section .disp .textBox h2 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section .disp .textBox p {
+    font-size: 20px;
+    font-weight: 400;
+    word-break: break-all;
+}
