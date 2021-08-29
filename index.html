@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>NusaDip.</title>
 </head>
 <body>
@@ -12,7 +13,8 @@
         <div class="circle"></div>
         <header>
             <a href="#" class="logo">Nusa<span>Dip.</span></a>
-            <ul>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
                 <li><a href="#">Tentang</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Promo</a></li>
@@ -41,7 +43,7 @@
             <li><a href="#"><img src="img/waicon.png"></a></li>
         </ul>
     </section>
-    <div class="section">
+    <!-- <div class="section">
         <div class="disp">
             <div id="gradientbg">
                 <img src="img/nusabot.svg" alt="nusabot">
@@ -57,7 +59,7 @@
     </div>
     <div class="section">
         afbawfboawbfoaboabv
-    </div>
+    </div> -->
 
     <script>
         function imgSlider(anything){
@@ -70,6 +72,12 @@
         function changeButtonColor(color){
             const button = document.querySelector('.button');
             button.style.background = color;
+        }
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
         }
     </script>
 </body>

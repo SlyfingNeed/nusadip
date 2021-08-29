@@ -18,11 +18,6 @@ section {
     background: #fff;
 }
 
-.section {
-    width: 100%;
-    min-height: 100vh;
-}
-
 header {
     position: absolute;
     top: 0;
@@ -76,7 +71,7 @@ header ul li a {
 
 .content .textBox {
     position: relative;
-    max-width: 600px;
+    max-width: 760px;
 }
 
 .content .textBox h2 {
@@ -119,16 +114,16 @@ header ul li a {
 }
 
 .content .imgBox img {
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 300px;
 }
 
 .thumb {
     position: absolute;
     left: 50%;
     bottom: 20px;
-    transform: translateX(-70%);
+    transform: translate(-70%, +10%);
     display: flex;
+    min-height: 100px;
 }
 
 .thumb li {
@@ -166,36 +161,4 @@ header ul li a {
     height: 100%;
     background: #E57455;
     clip-path: circle(500px at right 700px);
-}
-
-.section .disp {
-    display: flex;
-}
-
-.section .disp #gradientbg {
-    text-align: center;
-    height: 100vh;
-    min-width: 45%;
-    background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
-}
-
-.section .disp #gradientbg img {
-    height: 90vh;
-    padding: 25px 100px 0;
-}
-
-.section .disp .textBox {
-    padding: 50px;
-}
-
-.section .disp .textBox h2 {
-    padding: 10px;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-}
-
-.section .disp .textBox p {
-    font-size: 24px;
-    font-weight: 400;
 }
