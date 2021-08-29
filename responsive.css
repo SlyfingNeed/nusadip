@@ -1,4 +1,5 @@
 @media (max-width: 991px) {
+    /* HEADER */
     section {
         position: relative;
         width: 100%;
@@ -107,10 +108,10 @@
     .circle {
         clip-path: circle(400px at center bottom);
     }
-
 }
 
 @media (max-width: 600px) {
+    /* HEADER */
     .sci {
         bottom: 50%;
         padding: 10px 10px 0 10px;
@@ -131,6 +132,7 @@
 }
 
 @media (max-width: 420px) {
+    /* HEADER */
     .thumb li {
         margin: 0 5px;
     }

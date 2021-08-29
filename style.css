@@ -7,6 +7,7 @@
     font-family: 'Nunito Sans', sans-serif;;
 }
 
+/* HEADER */
 section {
     position: relative;
     width: 100%;
@@ -161,4 +162,41 @@ header ul li a {
     height: 100%;
     background: #E57455;
     clip-path: circle(500px at right 700px);
+}
+
+/* NUSABOT, KOMITMEN KAMI, APA KATA AHLI */
+.split {
+    display: flex;
+}
+  
+.left {
+    background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
+}
+  
+.right {
+    padding: 50px;
+}
+
+.right h2 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+.right p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+  
+.centered {
+    text-align: center;
+    min-width: 50%;
+    height: 100vh;
+}
+  
+.centered img {
+    width: 270px;
+    transform: translate(-10%, +5%);
 }
