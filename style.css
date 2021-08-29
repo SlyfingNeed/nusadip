@@ -173,13 +173,15 @@ header ul li a {
 }
 
 .section .disp #gradientbg {
-    height: 720px;
-    width: 50%;
+    text-align: center;
+    height: 100vh;
+    min-width: 45%;
     background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
 }
 
 .section .disp #gradientbg img {
-    padding: 0 100px;
+    height: 90vh;
+    padding: 25px 100px 0;
 }
 
 .section .disp .textBox {
