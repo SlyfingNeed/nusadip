@@ -179,14 +179,11 @@ header ul li a {
 }
 
 .section .disp #gradientbg img {
-    padding: 50px;
-    width: 500px;
-    height: 700px;
+    padding: 0 100px;
 }
 
 .section .disp .textBox {
     padding: 50px;
-    width: 720px;
 }
 
 .section .disp .textBox h2 {
@@ -197,7 +194,6 @@ header ul li a {
 }
 
 .section .disp .textBox p {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
-    word-break: break-all;
 }
