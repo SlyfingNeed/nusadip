@@ -167,10 +167,12 @@ header ul li a {
 /* NUSABOT, KOMITMEN KAMI, APA KATA AHLI */
 .split {
     display: flex;
-    max-height: 100vh;
+    height: 100vh;
+    align-items: center;
 }
   
 .left {
+    width: 100vw;
     background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
 }
   
@@ -193,7 +195,7 @@ header ul li a {
   
 .centered {
     text-align: center;
-    min-width: 50%;
+    min-width: 50vw;
     height: 100vh;
 }
   
