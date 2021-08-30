@@ -167,6 +167,7 @@ header ul li a {
 /* NUSABOT, KOMITMEN KAMI, APA KATA AHLI */
 .split {
     display: flex;
+    max-height: 100vh;
 }
   
 .left {
@@ -180,13 +181,13 @@ header ul li a {
 .right h2 {
     padding: 10px;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 3vw;
     text-align: center;
 }
 
 .right p {
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.95vw;
     font-weight: 400;
 }
   
@@ -198,5 +199,5 @@ header ul li a {
   
 .centered img {
     width: 270px;
-    transform: translate(-10%, +5%);
+    transform: translate(-10%, +20%);
 }
