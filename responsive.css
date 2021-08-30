@@ -1,12 +1,3 @@
-@media (min-width: 1280px) {
-    /* NUSABOT */
-    .right h2 {
-        font-size: 2.8vw;
-    }
-    .right p {
-        font-size: 1.7vw;
-    }
-}
 
 @media (max-width: 991px) {
     /* HEADER */
