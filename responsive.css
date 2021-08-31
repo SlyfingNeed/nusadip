@@ -1,4 +1,3 @@
-
 @media (max-width: 991px) {
     /* HEADER */
     section {
@@ -119,6 +118,14 @@
     .right p {
         font-size: 2.45vw;
     }
+    .img1 img {
+        width: 230px;
+        transform: translateX(-10%);
+    }
+    .img2 img {
+        width: 230px;
+        transform: translateX(+10%);
+    }
 }
 
 @media (max-width: 800px) {
@@ -172,11 +179,17 @@
         transform: translate(-15%, -15%);
     }
     /* NUSABOT */
-    .split {
+    .split1,.split2 {
         flex-direction: column;
+    }
+    .img1, .img2 {
+        clip-path: unset;
     }
     .left {
         height: 50%;
+    }
+    .centered {
+        display: unset;
     }
     .centered img {
         width: 150px;
