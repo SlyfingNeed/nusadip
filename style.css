@@ -195,7 +195,7 @@ header ul li a {
   
 .centered {
     text-align: center;
-    min-width: 50vw;
+    min-width: 50%;
     height: 100vh;
 }
   
