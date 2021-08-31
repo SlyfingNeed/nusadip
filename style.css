@@ -164,7 +164,7 @@ header ul li a {
     clip-path: circle(500px at right 700px);
 }
 
-/* NUSABOT, KOMITMEN KAMI, APA KATA AHLI */
+/* SPLIT SCREEN */
 .split1 {
     display: flex;
     height: 100vh;
@@ -174,7 +174,6 @@ header ul li a {
 .img1 {
     background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
     width: 100%;
-    height: 48px;
     display: inline-block;
     clip-path: polygon(0 0, 100% 0%, calc(100% - 64px) 100%, 0% 100%);
 }
@@ -189,7 +188,6 @@ header ul li a {
 .img2 {
     background: linear-gradient(180deg, #FBEF86 0%, rgba(51, 255, 0, 0.35) 100%);
     width: 100%;
-    height: 48px;
     display: inline-block;
     clip-path: polygon(64px 0, 100% 0%, 100% 100%, 0 100%);
 }
@@ -221,4 +219,12 @@ header ul li a {
   
 .centered img {
     width: 270px;
+}
+
+.split2 .button {
+    background-color: #F8A141;
+    padding: 15px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
 }

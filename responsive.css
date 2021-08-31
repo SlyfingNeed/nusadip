@@ -1,3 +1,9 @@
+@media (max-width: 991px) and (min-height: 950px) {
+    .content .imgBox {
+        height: 50vh;
+    }
+}
+
 @media (max-width: 991px) {
     /* HEADER */
     section {
