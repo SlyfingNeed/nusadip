@@ -194,9 +194,6 @@
     .left {
         height: 50%;
     }
-    .centered {
-        display: unset;
-    }
     .centered img {
         width: 150px;
         transform: translate(-10%, 0);
