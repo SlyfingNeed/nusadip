@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap');
 
 ::-webkit-scrollbar {
     display: none;
@@ -8,9 +8,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;;
+    font-family: 'Nunito Sans';
 }
 
+/* HEADER */
 section {
     position: relative;
     width: 100%;
@@ -75,7 +76,7 @@ header ul li a {
 
 .content .textBox {
     position: relative;
-    max-width: 600px;
+    max-width: 760px;
 }
 
 .content .textBox h2 {
@@ -118,16 +119,16 @@ header ul li a {
 }
 
 .content .imgBox img {
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 300px;
 }
 
 .thumb {
     position: absolute;
     left: 50%;
     bottom: 20px;
-    transform: translateX(-70%);
+    transform: translate(-70%, +10%);
     display: flex;
+    min-height: 100px;
 }
 
 .thumb li {
@@ -167,31 +168,49 @@ header ul li a {
     clip-path: circle(500px at right 700px);
 }
 
-.section .disp {
+/* SPLIT SCREEN */
+.split1 {
     display: flex;
+    height: 100vh;
+    align-items: center;
 }
 
-.section .disp #gradientbg {
-    height: 720px;
-    width: 50%;
+.img1 {
     background: linear-gradient(180deg, #5FB4E3 13.54%, rgba(72, 214, 163, 0.5) 100%);
+    width: 100%;
+    display: inline-block;
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 64px) 100%, 0% 100%);
 }
+
 
 .section .disp #gradientbg img {
     padding: 70px;
     width: 500px;
     height: 700px;
+
+.split2 {
+    display: flex;
+    height: 100vh;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
-.section .disp .textBox {
+.img2 {
+    background: linear-gradient(180deg, #FBEF86 0%, rgba(51, 255, 0, 0.35) 100%);
+    width: 100%;
+    display: inline-block;
+    clip-path: polygon(64px 0, 100% 0%, 100% 100%, 0 100%);
+}
+  
+.right {
     padding: 50px;
     width: 720px;
 }
 
-.section .disp .textBox h2 {
+.right h2 {
     padding: 10px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5vw;
     text-align: center;
 }
 
@@ -199,4 +218,106 @@ header ul li a {
     font-size: 20px;
     font-weight: 400;
     word-break: break-all;
+
+.right p {
+    padding: 10px;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+  
+.centered {
+    text-align: center;
+    min-width: 50%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+  
+.centered img {
+    width: 270px;
+}
+
+.split2 .button {
+    background-color: #F8A141;
+    padding: 15px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Yang Lagi Populer */
+.sectionmenu{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 50px;
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 250px;
+    border-radius: 15px;
+}
+.card .textBox h2 {
+    padding: 10px;
+}
+
+.sectionmenu .button {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50%, +150%);
+}
+
+/* BAR PROMO */
+.sectionpromo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionpromo .divide {
+    height: 33.3%;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 10px 100px;
+}
+
+.sectionpromo .bar1 {
+    background-color: rgba(255, 143, 143, 1);
+}
+.sectionpromo .bar1 .one {
+    font-style: oblique;
+    font-weight: 900;
+    padding: 40px 0;
+}
+.sectionpromo .bar1 .two h1 {
+    font-style: oblique;
+    font-weight: 900;
+    padding: 40px 0;
+}
+.sectionpromo .bar1 .two a {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(31, 61, 4, 1);
+    color: rgba(255, 143, 143, 1);
+    text-decoration: none;
+}
+.sectionpromo .bar2 {
+    background-color: rgba(255, 215, 75, 1);
+}
+.sectionpromo .bar3 {
+    background-color: rgba(219, 255, 143, 1);
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>NusaDip.</title>
 </head>
 <body>
@@ -12,9 +13,10 @@
         <div class="circle"></div>
         <header>
             <a href="#" class="logo">Nusa<span>Dip.</span></a>
-            <ul>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
                 <li><a href="#">Tentang</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <li><a href="#">Promo</a></li>
                 <li><a href="#">Hubungi</a></li>
             </ul>
@@ -41,21 +43,66 @@
             <li><a href="#"><img src="img/waicon.png"></a></li>
         </ul>
     </section>
-
-    <div class="section">
-        <div class="disp">
-            <div id="gradientbg">
-                <img src="img/nusabot.svg" alt="">
-            </div>
-            <div class="textBox">
-                <h2>Komitmen kami</h2>
-                <p>Kami berkomitmen untuk mempertahankan citarasa khas kampung halaman makanan hingga ke piring anda. Rasa otentik yang disajikan dijamin oleh chef profesional yang sudah berpengalaman menciptakan makanan nusantara dan teruji BPOM serta Halal.</p>
-                <h2>Apa Kata Ahli</h2>
-                <p>“Mengingatkan saya pada kampung halaman.” <br> -Chef Janu</p>
-                <p>“Satu-satunya yang saya berani katakan menyajikan makanan yang benar-benar nusantara dengan identitasnya.” <br> -Gordon Ramsa’i</p>
-            </div>
+    <div class="split1">
+        <div class="centered img1">
+            <img src="img/nusabot.svg" alt="nusabot">
+        </div>
+        <div class="centered right">
+            <h2>Komitmen kami</h2>
+            <p>Kami berkomitmen untuk mempertahankan citarasa khas kampung halaman makanan hingga ke piring anda. Rasa otentik yang disajikan dijamin oleh chef profesional yang sudah berpengalaman menciptakan makanan nusantara dan teruji BPOM serta Halal.</p>
+            <h2>Apa Kata Ahli</h2>
+            <p>“Mengingatkan saya pada kampung halaman.” <br> -Chef Janu</p>
+            <p>“Satu-satunya yang saya berani katakan menyajikan makanan yang benar-benar nusantara dengan identitasnya.” <br>-Gordon Ramsa’i</p>
+        </div>
+    </div>  
+    <div class="split2">
+        <div class="centered img2">
+            <img src="img/delivery.svg" alt="nusabot">
+        </div>
+        <div class="centered right">
+            <h2>Tenang,<br>Kami antar pakai robot!</h2>
+            <p>Keterbatasan saat pandemi membuat kami peduli untuk berinovasi agar makanan sampai di rumah anda dengan aman dan praktis.</p>
+            <a href="#" class="button">Baca Selengkapnya</a>
+            <h6>*sesuai ketentuan yang berlaku</h6>
         </div>
     </div>
+    <div class="sectionmenu">
+        <div class="title">Yang Lagi Populer</div>
+        <div class="flex">
+            <div class="card">
+                <div class="image"><img src="img/bebeksongkem.png" alt=""></div>
+                <div class="textBox">
+                    <h2>Bebek Songkem</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="img/nasigoreng.png" alt=""></div>
+                <div class="textBox">
+                    <h2>Nasi Goreng Jawa</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="img/miecakalang.png" alt=""></div>
+                <div class="textBox">
+                    <h2>Mie Cakalang</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="button">Lihat Semua Menu</a>
+    </div>
+    <div class="sectionpromo">
+        <div class="divide bar1">
+            <h1 class="one">BUAT KAMU<br>YANG LAGI<br>ULTAH</h1>
+            <div class="two">
+                <h1>CUMA 49K</h1>
+                <a href="http://">Mau dong!</a>
+            </div>
+            <img src="img/hadiah1.png" alt="">
+            <img src="img/tumpeng.png" alt="">
+        </div>
+        <div class="divide bar2"></div>
+        <div class="divide bar3"></div>
+    </div>  
 
     <script>
         function imgSlider(anything){
@@ -68,6 +115,12 @@
         function changeButtonColor(color){
             const button = document.querySelector('.button');
             button.style.background = color;
+        }
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
         }
     </script>
 </body>

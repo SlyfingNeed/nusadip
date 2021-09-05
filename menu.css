@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+* { /*setting universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Page 1 "Menu Makanan*/
+
+/*setting page 1 "Map Menu"*/
+.section1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    background: #fff;
+}
+
+/*arrow*/
+.section1 .disp #arrow img{
+    position:absolute;
+    margin: 2%;
+}
+
+/*Map Menu*/
+.section1 .disp #title1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+
+.section1 .disp .mapbg #rect {
+    width: 1012px;
+    height: 368px;
+    margin-inline: 10%;
+    background-color: rgba(194, 226, 226, 0.45);
+    border-radius: 48px;
+}
+.section1 .disp .mapbg #rect img{
+    width: 1012px;
+    height: 368px;
+    margin-top: -10px;
+}
+.section1 .disp .mapbg #map {
+    position: absolute;
+    width: 846.96px;
+    height: 302.02px;
+    left: 215.67px;
+    top: 120px;  
+}
+
+/*Functional Button to page "menu layout"*/
+#rect img #btnforward1{
+    margin-top: 0%;
+}
+
+/*Bar "Pilih Asal Makanan dulu, ya."*/
+.section1 .disp #notif {
+    margin-top: 38px;
+    width: 1280px;
+    height: 75px;
+    background-color: #FF6060;
+    position: relative;
+}
+
+.section1 .disp #notif h2 {
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 485px;
+}
+
+/*page 2 "layout menu"/
