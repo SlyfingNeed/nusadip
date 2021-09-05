@@ -305,3 +305,13 @@ header ul li a {
 .sectionpromo .bar3 {
     background-color: rgba(219, 255, 143, 1);
 }
+
+/* FOOTER */
+footer {
+    background: #d0d0d0;
+}
+footer .content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
