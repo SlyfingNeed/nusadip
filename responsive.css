@@ -200,26 +200,29 @@
     }
     /* NUSABOT */
     .split1,.split2 {
+        display: unset;
         flex-direction: column;
     }
     .img1, .img2 {
         clip-path: unset;
+        height: 50vh;
     }
-    .left {
-        height: 50%;
+    .img1 img {
+        transform: translate(0,-500%);
     }
-    .centered img {
-        width: 150px;
-        transform: translate(-10%, 0);
+    .img1 img, .img2 img {
+        transform: scale(0.5);
     }
     .right {
-        max-width: 75%;
+        width: 80%;
+        height: 100vh;
+        transform: translateX(15%);
     }
     .right h2 {
-        font-size: 4vw;
+        font-size: 4.8vw;
     }
     .right p {
-        font-size: 2vw;
+        font-size: 3.8vw;
     }
 }
 
