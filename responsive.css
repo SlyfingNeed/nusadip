@@ -1,0 +1,227 @@
+@media (max-width: 991px) and (min-height: 950px) {
+    .content .imgBox {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 991px) {
+    /* HEADER */
+    section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+    }
+    header {
+        padding: 20px 60px;
+    }
+    header ul {
+        display: none;
+    }
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        right: 0;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    
+    .toggle.active {
+        background: url(img/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    header ul.navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+    }
+    header ul li {
+        padding: 10px;
+    }
+    header ul li a {
+        background: #fff;
+        color: rgb(0, 0, 0);
+        border-radius: 0px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+    header .logo {
+        font-size: 36px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .textBox h2 {
+        font-size: 28px;
+        line-height: 1.2em;
+        padding: 60px 0 0;
+    }
+    .content .textBox h2 .n, .content .textBox h2 .d {
+        font-size: 28px;
+    }
+    .content .imgBox {
+        transform: translate(-20%, +40%);
+    }
+    .content .imgBox img {
+        max-height: 250px;
+        max-width: 250px;
+        transform: translate(-5%, -50%);
+    }
+    .thumb {
+        bottom: 70px;
+        transform: translate(-50%, +10%);
+        display: flex;
+        max-width: -100%;
+    }
+    .thumb li {
+        list-style: none;
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+    .thumb li img {
+        width: 100px;
+    }
+    .thumb li:hover {
+        transform: none;
+    }
+    .circle {
+        clip-path: circle(400px at center bottom);
+    }
+    /* NUSABOT */
+    .right {
+        padding: 20px;
+    }
+    .right h2 {
+        font-size: 3.2vw;
+    }
+    .right p {
+        font-size: 2.45vw;
+    }
+    .img1 img {
+        width: 230px;
+        transform: translateX(-10%);
+    }
+    .img2 img {
+        width: 230px;
+        transform: translateX(+10%);
+    }
+}
+
+@media (max-width: 800px) {
+    /* NUSABOT */
+    .right h2 {
+        font-size: 3.2vw;
+    }
+    
+    .right p {
+        font-size: 2.7vw;
+    }
+}
+
+@media (max-width: 600px) {
+    /* HEADER */
+    header {
+        padding: 20px 30px;
+    }
+    header .logo{
+        font-size: 28px;
+    }
+    .content .textBox a {
+        font-size: 14px;
+    }
+    .sci {
+        bottom: 50%;
+        padding: 15px 15px 0 15px;
+        border-radius: 34px 0px 0px 34px;
+        line-height: 40px;
+    }
+    .sci li img {
+        width: 20px;
+    }
+    .circle {
+        clip-path: circle(300px at center bottom);
+    }
+    .content .textBox h2 {
+        font-size: 22px;
+        line-height: 1.2em;
+        padding: 60px 0 0;
+    }
+    .content .textBox h2 .n, .content .textBox h2 .d {
+        font-size: 22px;
+    }
+    .content .textBox p {
+        font-size: 15px;
+    }
+    .content .imgBox img {
+        max-height: 200px;
+        max-width: 200px;
+        transform: translate(-15%, -15%);
+    }
+    /* NUSABOT */
+    .split1,.split2 {
+        flex-direction: column;
+    }
+    .img1, .img2 {
+        clip-path: unset;
+    }
+    .left {
+        height: 50%;
+    }
+    .centered img {
+        width: 150px;
+        transform: translate(-10%, 0);
+    }
+    .right h2 {
+        font-size: 4vw;
+    }
+    
+    .right p {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 436px) {
+    /* HEADER */
+    .thumb li {
+        margin: 0 5px;
+    }
+    .content .imgBox img {
+        max-height: 190px;
+        max-width: 190px;
+        transform: translate(-20%, -30%);
+    }
+    /* NUSABOT */
+    .right h2 {
+        font-size: 4.8vw;
+    }
+    .right p {
+        font-size: 3.8vw;
+    }
+}
