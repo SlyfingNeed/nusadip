@@ -1,4 +1,4 @@
-@media (max-width: 991px) and (min-height: 950px) {
+ @media (max-width: 991px) and (min-height: 950px) {
     .content .imgBox {
         height: 50vh;
     }
@@ -132,6 +132,20 @@
         width: 230px;
         transform: translateX(+10%);
     }
+    /* footer */
+    footer .content {
+        display: flex;
+        flex-direction: row;
+    }
+    footer .content .text-left h2, footer .content .text-middle h2, footer .content .text-right h2{
+        font-size: 3vw;
+    }
+    footer .content .text-left p, footer .content .text-middle p, footer .content .text-right p{
+        font-size: 2vw;
+    }
+    footer .logo a{
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -186,24 +200,29 @@
     }
     /* NUSABOT */
     .split1,.split2 {
+        display: unset;
         flex-direction: column;
     }
     .img1, .img2 {
         clip-path: unset;
+        height: 50vh;
     }
-    .left {
-        height: 50%;
+    .img1 img {
+        transform: translate(0,-500%);
     }
-    .centered img {
-        width: 150px;
-        transform: translate(-10%, 0);
+    .img1 img, .img2 img {
+        transform: scale(0.5);
+    }
+    .right {
+        width: 80%;
+        height: 100vh;
+        transform: translateX(15%);
     }
     .right h2 {
-        font-size: 4vw;
+        font-size: 4.8vw;
     }
-    
     .right p {
-        font-size: 3vw;
+        font-size: 3.8vw;
     }
 }
 

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap');
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -194,6 +198,7 @@ header ul li a {
   
 .right {
     padding: 50px;
+    width: 720px;
 }
 
 .right h2 {
@@ -229,79 +234,138 @@ header ul li a {
     text-decoration: none;
 }
 
-/* Yang Lagi Populer */
-.sectionmenu{
-    height: 100vh;
+/* yang lagi populer */
+
+.main{
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 20px;
     text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+/* PROMO */
+
+
+/* FOOTER */
+footer {
+    background: #d0d0d0;
+    height: 300px;
+    width: 100%;
     position: relative;
 }
-.title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 36px;
-    padding: 50px;
+footer .content {
+    padding: 35px;
+    justify-content: space-around;
 }
-.flex {
-    display: flex;
-    justify-content: space-evenly;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 250px;
-    border-radius: 15px;
-}
-.card .textBox h2 {
-    padding: 10px;
-}
-
-.sectionmenu .button {
-    font-size: 20px;
-    text-decoration: none;
-    background-color: red;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 15px;
+footer .logo {
+    bottom: 0;
+    right: 0;
+    padding: 35px;
     position: absolute;
-    transform: translate(-50%, +150%);
+    font-size: 48px;
 }
-
-/* BAR PROMO */
-.sectionpromo {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.sectionpromo .divide {
-    height: 33.3%;
-    display: grid;
-    grid-auto-flow: column;
-    padding: 10px 100px;
-}
-
-.sectionpromo .bar1 {
-    background-color: rgba(255, 143, 143, 1);
-}
-.sectionpromo .bar1 .one {
-    font-style: oblique;
-    font-weight: 900;
-    padding: 40px 0;
-}
-.sectionpromo .bar1 .two h1 {
-    font-style: oblique;
-    font-weight: 900;
-    padding: 40px 0;
-}
-.sectionpromo .bar1 .two a {
-    padding: 10px;
-    border-radius: 15px;
-    background-color: rgba(31, 61, 4, 1);
-    color: rgba(255, 143, 143, 1);
+footer .logo a {
     text-decoration: none;
+    color: black;
 }
-.sectionpromo .bar2 {
-    background-color: rgba(255, 215, 75, 1);
+footer .logo span {
+    color: #ff0000;
 }
-.sectionpromo .bar3 {
-    background-color: rgba(219, 255, 143, 1);
+
+footer p.copyright {
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    line-height: 40px;
+    text-align: center;
 }
+
