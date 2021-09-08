@@ -11,7 +11,7 @@
 <body>
     <section>
         <div class="circle"></div>
-        <header>
+        <header id="nav-scroll">
             <a href="#" class="logo">Nusa<span>Dip.</span></a>
             <div class="toggle" onclick="toggleMenu();"></div>
             <ul class="navigation">
@@ -166,6 +166,20 @@
         </p>
         </footer>
 
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+          navbar = document.getElementById("nav-scroll");
+        window.addEventListener("scroll", function(){
+          var scrollTop = window.pageYOffset || document
+              .documentElement.scrollTop;
+          if (scrollTop > lastScrollTop){
+            navbar.style.top="-80px";
+          } else {
+            navbar.style.top="0";
+          }
+          lastScrollTop = scrollTop;
+        })
+    </script>
     <script>
         function imgSlider(anything){
             document.querySelector(`.nusadip`).src = anything;
