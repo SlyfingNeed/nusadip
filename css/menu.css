@@ -64,6 +64,60 @@ nav ul li a:hover {
   box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
 }
 
+/* header */
+header {
+  margin-top: 80px;
+  background: url('../img/bgwilayahheader.jpg') center center no-repeat;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+
+}
+
+header .overlay h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+header .overlay h3,
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+}
+
+header .overlay button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+header .overlay button:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
 /* yang lagi populer */
 
 .main{
@@ -72,23 +126,23 @@ nav ul li a:hover {
   letter-spacing: 0;
   padding: 1rem;
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
-h1 {
+.main h1 {
     font-size: 40px;
     font-weight: 400;
     padding: 20px;
     text-align: center;
 }
 
-img {
+.main img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
 }
 
-.btn {
+.main .btn {
   color: #ffffff;
   padding: 0.8rem;
   font-size: 14px;
@@ -102,7 +156,7 @@ img {
   background: transparent;
 }
 
-.btn:hover {
+.main .btn:hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
 

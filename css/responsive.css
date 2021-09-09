@@ -139,8 +139,12 @@
     }
     /* footer */
     footer .content {
-        display: flex;
-        flex-direction: row;
+        padding: 20px 40px;
+    }
+    footer .content .text-left,
+    footer .content .text-middle,
+    footer .content .text-right {
+        padding: 15px 0;
     }
     footer .content .text-left h2, footer .content .text-middle h2, footer .content .text-right h2{
         font-size: 3vw;
@@ -150,6 +154,9 @@
     }
     footer .logo a{
         font-size: 26px;
+    }
+    footer p.copyright {
+        font-size: 10px;
     }
     /* menu sumatra */
     .container {
@@ -168,6 +175,9 @@
     
     .right p {
         font-size: 2.7vw;
+    }
+    footer {
+        height: 75vh;
     }
 }
 
@@ -240,6 +250,23 @@
     /* menu sumatra */
     .container {
         padding: 50px 40px;
+    }
+    footer {
+        height: unset;
+    }
+    footer .content {
+        grid-auto-flow: row;
+    }
+    footer .content .text-left h2,
+    footer .content .text-middle h2,
+    footer .content .text-right h2 {
+        font-size: 5vw;
+    }
+
+    footer .content .text-left p,
+    footer .content .text-middle p,
+    footer .content .text-right p {
+        font-size: 3vw;
     }
 }
 

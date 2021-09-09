@@ -2,7 +2,7 @@
 
 header {
     margin-top: 80px;
-    background: url('../img/bgbaliheader.jpg');
+    background: url('../img/bgbaliheader.jpg') center center no-repeat;
     text-align: center;
     width: 100%;
     height: auto;
