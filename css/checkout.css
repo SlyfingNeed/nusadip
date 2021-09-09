@@ -69,7 +69,7 @@ nav ul li a:hover {
 
 header {
     margin-top: 80px;
-	background: url('img/bgbaliheader.jpg');
+	background: url('../img/bgbaliheader.jpg');
 	text-align: center;
 	width: 100%;
 	height: auto;
@@ -89,18 +89,18 @@ header .overlay{
 	
 }
 
-h1 {
+header .overlay h1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 80px;
 	margin-bottom: 30px;
 }
 
-h3, p {
+header .overlay h3, p {
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 30px;
 }
 
-button {
+header .overlay button {
 	border: none;
 	outline: none;
 	padding: 10px 20px;
@@ -110,6 +110,18 @@ button {
 	margin-bottom: 50px;
 	box-shadow: 0 3px 20px 0 #0000003b;
 }
-button:hover{
+header .overlay button:hover{
 	cursor: pointer;
+}
+
+/* content */
+.konten {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    padding: 50px 100px;
+    text-align: center;
+}
+.konten img {
+    transform: scale(0.4);
 }
