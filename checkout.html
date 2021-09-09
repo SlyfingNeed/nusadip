@@ -5,11 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Sumatra</title>
 </head>
 <body>
-    <h2>Hi, tinggal satu langkah lagi &#x1F44B;</h2>
-    <img src="checkoutlogo.svg" alt="">
-            <p><span id="txt">tinggal chat kami via WhatsApp di nomor bawah ini</span> <br> 
-                <span id="no">(+62)812 7777 4888</span></p>
+    <nav id="nav-scroll">
+        <a href="#" class="logo">Nusa<span>Dip.</span></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Tentang</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="nusablog.html">Artikel</a></li>
+            <li><a href="checkout.html">Hubungi</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="overlay">
+    <h1>Hubungi</h1>
+    <h3>Reasons for Choosing US</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
+        <br>
+        <button>READ MORE</button>
+            </div>
+    </header>
+
+    <div class="konten">
+        <h1>Hi, tinggal satu langkah lagi &#x1F44B;</h1>
+        <img src="checkoutlogo.svg" alt="">
+        <p><span id="txt">tinggal chat kami via WhatsApp di nomor bawah ini</span> <br> 
+        <span id="no">(+62)812 7777 4888</span></p>
+    </div>
+
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+          navbar = document.getElementById("nav-scroll");
+        window.addEventListener("scroll", function(){
+          var scrollTop = window.pageYOffset || document
+              .documentElement.scrollTop;
+          if (scrollTop > lastScrollTop){
+            navbar.style.top="-80px";
+          } else {
+            navbar.style.top="0";
+          }
+          lastScrollTop = scrollTop;
+        })
+    </script>
+    <script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>

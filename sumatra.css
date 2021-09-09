@@ -117,7 +117,7 @@ header .overlay button:hover{
 /* menu makanan with filtering categories */
 
 .main{
-    padding: 50px 0;
+    padding: 50px 100px;
     text-align: center;
 }
  
@@ -142,6 +142,7 @@ header .overlay button:hover{
  
 .main ul{
     margin-top: 50px;
+    display: flex;
 }
  
 .main ul li{
@@ -152,7 +153,8 @@ header .overlay button:hover{
     font-weight: 700;
     cursor: pointer;
     transition: all .5s ease;
- color: #333;
+    color: #333;
+    list-style: none;
 }
  
 .main ul li.active,
@@ -184,7 +186,8 @@ header .overlay button:hover{
 }
  
 .main .container-fluid img{
-    width: 100%
+    width: 300px;
+    height: 200px;
 }
  
 @media (max-width: 767px){
