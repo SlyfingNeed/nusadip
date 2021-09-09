@@ -324,6 +324,10 @@ img {
   background: rgba(255, 255, 255, 0.8)
 }
 
+.card_content a{
+    text-decoration: none;
+}
+
 .card img {
     width: 500px;
     height: 250px;
@@ -346,19 +350,22 @@ img {
   font-weight: 400;
 }
 
-/* PROMO */
-
-
 /* FOOTER */
 footer {
     background: #d0d0d0;
-    height: 300px;
+    height: 50vh;
     width: 100%;
     position: relative;
 }
 footer .content {
+    display: grid;
+    grid-auto-flow: column;
     padding: 35px;
     justify-content: space-around;
+}
+footer .content a {
+    text-decoration: none;
+    color: black;
 }
 footer .logo {
     bottom: 0;

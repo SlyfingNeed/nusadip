@@ -89,4 +89,8 @@ nav ul li a:hover {
 .grid .text {
     padding: 20px;
 }
-  
+
+a {
+    text-decoration: none;
+    color: black;
+}

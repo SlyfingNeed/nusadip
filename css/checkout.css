@@ -125,3 +125,7 @@ header .overlay button:hover{
 .konten img {
     transform: scale(0.4);
 }
+
+a{
+    text-decoration: none;
+}

@@ -29,6 +29,14 @@ h1 {
     margin-bottom: 30px;
 }
 
+h1 span {
+    font-family: 'Dancing Script',
+    cursive;
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: #0057FF;
+}
+
 h3,
 p {
     font-family: 'Open Sans', sans-serif;
