@@ -69,7 +69,7 @@ nav ul li a:hover {
 
 header {
     margin-top: 80px;
-	background: url('img/bgbaliheader.jpg');
+	background: url('img/bgbaliheader.jpg') center center no-repeat;
 	text-align: center;
 	width: 100%;
 	height: auto;
@@ -114,84 +114,28 @@ header .overlay button:hover{
 	cursor: pointer;
 }
 
-/* menu makanan with filtering categories */
-
-.main{
+/* menu makanan */
+.container {
     padding: 50px 100px;
-    text-align: center;
 }
- 
-.main h1{
-    font-size: 42px;
-    color: #333;
-    font-weight: 700;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
 }
- 
-.main p{
-    font-size: 18px;
-    color: #687074;
-    width: 70%;
-    margin: 15px auto;
+  
+.grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
- 
-.main p a {
- text-decoration: none;
- color: #ec1c23;
- font-weight: 900;
+
+.grid > article img {
+    width: 100%;
+    height: 250px;
 }
- 
-.main ul{
-    margin-top: 50px;
-    display: flex;
+
+.grid .text {
+    padding: 20px;
 }
- 
-.main ul li{
-    padding: 10px 15px;
-    border: 2px solid #333;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all .5s ease;
-    color: #333;
-    list-style: none;
-}
- 
-.main ul li.active,
-.main ul li:hover{
-    background-color: #ec1c23;
-    color: #FFF;
-    border: 2px solid #ec1c23;
-}
- 
-.main ul li:last-of-type{
-    margin-right: 0 ;
-}
- 
-.main ul li:nth-of-type(3),
-.main ul li:nth-of-type(4),
-.main ul li:nth-of-type(5){
-    flex-grow: 2
-}
- 
-.main .container-fluid{
-  overflow: hidden;
-  padding: 0;
-}
- 
-.main .container-fluid .col-md-3{
-    padding: 0;
-    float: left;
-    transition: all 5s ease-in-out
-}
- 
-.main .container-fluid img{
-    width: 300px;
-    height: 200px;
-}
- 
-@media (max-width: 767px){
-    .main .container-fluid img{
-        margin-bottom: 15px
-    }
-}
+  

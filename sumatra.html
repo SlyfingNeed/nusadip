@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sumatra.css">
+    <link rel="stylesheet" href="pulaumenu.css">
     <link rel="stylesheet" href="responsive.css">
     <title>Sumatra</title>
 </head>
@@ -32,74 +32,84 @@
             </div>
     </header>
 
-    <!-- menu makanan with filtering categories -->
-    <section class="main text-center">
-        <div class="container">
-          <h1>Menu NusaDip.</h1>
-          <p>Disini anda dapat mencari makanan yang anda inginkan. Anda juga dapat mengklik kategori makanan yang ada</p>
-          <ul class="list-unstyled row">
-            <li class="col-md active" data-class="all">ALL</li>
-            <li class="col-md" data-class="design">POPULER</li>
-            <li class="col-md" data-class="development">RATING TERATAS</li>
-          </ul>
-        </div>
-        <div class="container-fluid ">
-          <div class="col-md-3 images" data-class="ui">
-            <img src="img/rendang.webp" alt="">
+    <!-- menu makanan -->
+    <div class="container">
+      <main class="grid">
+        <article>
+          <img src="img/nasi-padang.jpeg" alt="Sample photo">
+          <div class="text">
+            <h3>Nasi Padang</h3>
+            <p>Masakan Padang adalah makanan yang berasal dari Minangkabau, Provinsi Sumatera Barat. Masakan ini umumnya bercita rasa pedas. Jika Anda menyukai makanan pedas maka restoran Padang adalah tempat yang tepat untuk Anda kunjungi. </p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Here's why</a>
           </div>
-          <div class="col-md-3 images" data-class="development">
-            <img src="https://picsum.photos/300/200?random=2" alt="">
+        </article>
+        <article>
+          <img src="img/rendang.webp" alt="Sample photo">
+          <div class="text">
+            <h3>Rendang</h3>
+            <p>Sebagian besar orang Indonesia pastinya sudah tak asing lagi dengan rendang, salah satu kuliner khas dari Minangkabau. Kaya akan rasa rempah dan bumbu, membuat rendang memiliki rasa yang begitu lezat. Sehingga tak mengherankan jika rendang dinobatkan sebagai kuliner terlezat di dunia. Hayo ngaku, siapa nih yang ngieler liat dagingnya?</p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Here's how</a>
           </div>
-          <div class="col-md-3 images" data-class="ui">
-            <img src="https://picsum.photos/300/200?random=3" alt="">
+        </article>
+        <article>
+          <img src="img/dendengbld.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>Dendeng Balado</h3>
+            <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Read more</a>
           </div>
-          <div class="col-md-3 images" data-class="design">
-            <img src="https://picsum.photos/300/200?random=4" alt="">
+        </article>
+        <article>
+          <img src="img/miaceh.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>Mie Aceh</h3>
+            <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Just do it...</a>
           </div>
-          <div class="col-md-3 images" data-class="development">
-            <img src="https://picsum.photos/300/200?random=5" alt="">
+        </article>
+        <article>
+          <img src="img/bika-ambon.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>Bika Ambon</h3>
+            <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Here's why</a>
           </div>
-          <div class="col-md-3 images" data-class="design">
-            <img src="https://picsum.photos/300/200?random=6" alt="">
+        </article>
+        <article>
+          <img src="img/pempek.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>Pempek</h3>
+            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Stop here</a>
           </div>
-          <div class="col-md-3 images" data-class="graphic">
-            <img src="https://picsum.photos/300/200?random=7" alt="">
+        </article>
+        <article>
+          <img src="img/ayampop.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>Ayam Pop</h3>
+            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Stop here</a>
           </div>
-          <div class="col-md-3 images" data-class="seo">
-            <img src="https://picsum.photos/300/200?random=8" alt="">
+        </article>
+        <article>
+          <img src="img/sotopadang.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>Soto Padang</h3>
+            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Stop here</a>
           </div>
-        </div>
-    </section>
+        </article>
+        <article>
+          <img src="img/ikanasampadeh.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>Ikan Asam Padeh</h3>
+            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <a href="checkout.html" class="btn btn-primary btn-block">Stop here</a>
+          </div>
+        </article>
+      </main>
+    </div>
 
-    <script>
-        const listItems = document.querySelectorAll('.main li');
-        const allimages = document.querySelectorAll('.main .container-fluid .images');
-        
-        function toggleActiveClass(active){
-            listItems.forEach(item => {
-            item.classList.remove('active');
-            })
-            active.classList.add('active');
-        }
-        
-        function toggleimages(dataClass){
-            if(dataClass === 'all'){
-                for(let i = 0; i<allimages.length; i++){
-                    allimages[i].style.display = 'block';
-                }
-            }else{
-                for(let i = 0; i<allimages.length; i++)
-                    allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
-            }
-        }
-        
-        for(let i = 0; i < listItems.length; i++){
-            listItems[i].addEventListener('click', function(){
-                toggleActiveClass(listItems[i]);
-                toggleimages(listItems[i].dataset.class);
-            });
-        }    
-    </script>
     <script type="text/javascript">
         var lastScrollTop = 0;
           navbar = document.getElementById("nav-scroll");

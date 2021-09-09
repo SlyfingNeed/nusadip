@@ -151,6 +151,10 @@
     footer .logo a{
         font-size: 26px;
     }
+    /* menu sumatra */
+    .container {
+        padding: 50px 60px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -228,6 +232,11 @@
     }
     .right p {
         font-size: 3.8vw;
+    }
+
+    /* menu sumatra */
+    .container {
+        padding: 50px 40px;
     }
 }
 
