@@ -143,6 +143,7 @@ img {
 .card_content {
   padding: 1rem;
   background: rgb(71, 70, 70);
+  height: 50%;
 }
 
 .card img {
