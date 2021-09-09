@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sumatra.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Sumatra</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="nav-scroll">
+        <a href="#" class="logo">Nusa<span>Dip.</span></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sumatra.html">Sumatra</a></li>
+            <li><a href="jawa.html">Jawa</a></li>
+            <li><a href="bali.html">Bali</a></li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <div class="overlay">
+    <h1>Sumatra</h1>
+    <h3>Reasons for Choosing US</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
+        <br>
+        <button>READ MORE</button>
+            </div>
+    </header>
+
+    <!-- menu makanan with filtering categories -->
+    <section class="main text-center">
+        <div class="container">
+          <h1>JAVASCRIPT PORTFOLIO FILTER</h1>
+          <p>This is a HTML CSS &amp; JavaScript prtfolio filter, You can call this sorting images by category order. The layout design is based on Bootstrap. This Example &amp; Source Code By <a href="https://webdevtrick.com">Webdevtrick</a></p>
+          <ul class="list-unstyled row">
+            <li class="col-md active" data-class="all">ALL</li>
+            <li class="col-md" data-class="design">WEB DESIGN</li>
+            <li class="col-md" data-class="development">WEB DEVELOPMENT</li>
+            <li class="col-md" data-class="graphic">GRAPHIC DESIGN</li>
+            <li class="col-md" data-class="seo">SEARCH ENGINE</li>
+            <li class="col-md" data-class="ui">UI / UX</li>
+          </ul>
+        </div>
+        <div class="container-fluid ">
+          <div class="col-md-3 images" data-class="ui">
+            <img src="https://picsum.photos/300/200?random=1" alt="">
+          </div>
+          <div class="col-md-3 images" data-class="development">
+            <img src="https://picsum.photos/300/200?random=2" alt="">
+          </div>
+          <div class="col-md-3 images" data-class="ui">
+            <img src="https://picsum.photos/300/200?random=3" alt="">
+          </div>
+          <div class="col-md-3 images" data-class="design">
+            <img src="https://picsum.photos/300/200?random=4" alt="">
+          </div>
+          <div class="col-md-3 images" data-class="development">
+            <img src="https://picsum.photos/300/200?random=5" alt="">
+          </div>
+          <div class="col-md-3 images" data-class="design">
+            <img src="https://picsum.photos/300/200?random=6" alt="">
+          </div>
+          <div class="col-md-3 images" data-class="graphic">
+            <img src="https://picsum.photos/300/200?random=7" alt="">
+          </div>
+          <div class="col-md-3 images" data-class="seo">
+            <img src="https://picsum.photos/300/200?random=8" alt="">
+          </div>
+        </div>
+    </section>
+
+    <script>
+        const listItems = document.querySelectorAll('.main li');
+        const allimages = document.querySelectorAll('.main .container-fluid .images');
+        
+        function toggleActiveClass(active){
+            listItems.forEach(item => {
+            item.classList.remove('active');
+            })
+            active.classList.add('active');
+        }
+        
+        function toggleimages(dataClass){
+            if(dataClass === 'all'){
+                for(let i = 0; i<allimages.length; i++){
+                    allimages[i].style.display = 'block';
+                }
+            }else{
+                for(let i = 0; i<allimages.length; i++)
+                    allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
+            }
+        }
+        
+        for(let i = 0; i < listItems.length; i++){
+            listItems[i].addEventListener('click', function(){
+                toggleActiveClass(listItems[i]);
+                toggleimages(listItems[i].dataset.class);
+            });
+        }    
+    </script>
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+          navbar = document.getElementById("nav-scroll");
+        window.addEventListener("scroll", function(){
+          var scrollTop = window.pageYOffset || document
+              .documentElement.scrollTop;
+          if (scrollTop > lastScrollTop){
+            navbar.style.top="-80px";
+          } else {
+            navbar.style.top="0";
+          }
+          lastScrollTop = scrollTop;
+        })
+    </script>
+    <script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

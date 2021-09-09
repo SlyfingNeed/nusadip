@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sumatra.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Sumatra</title>
+</head>
+<body>
+    <nav id="nav-scroll">
+        <a href="#" class="logo">Nusa<span>Dip.</span></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sumatra.html">Sumatra</a></li>
+            <li><a href="jawa.html">Jawa</a></li>
+            <li><a href="bali.html">Bali</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="overlay">
+    <h1>Bali</h1>
+    <h3>Reasons for Choosing US</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
+        <br>
+        <button>READ MORE</button>
+            </div>
+    </header>
+
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+          navbar = document.getElementById("nav-scroll");
+        window.addEventListener("scroll", function(){
+          var scrollTop = window.pageYOffset || document
+              .documentElement.scrollTop;
+          if (scrollTop > lastScrollTop){
+            navbar.style.top="-80px";
+          } else {
+            navbar.style.top="0";
+          }
+          lastScrollTop = scrollTop;
+        })
+    </script>
+    <script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

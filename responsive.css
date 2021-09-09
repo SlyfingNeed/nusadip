@@ -17,10 +17,10 @@
         align-items: center;
         background: #fff;
     }
-    header {
+    nav {
         padding: 20px 60px;
     }
-    header ul {
+    nav ul {
         display: none;
     }
     .toggle {
@@ -44,7 +44,7 @@
         background-repeat: no-repeat;
     }
     
-    header ul.navigation.active {
+    nav ul.navigation.active {
         position: fixed;
         top: 0;
         left: 0;
@@ -57,10 +57,10 @@
         background: #fff;
         z-index: 10;
     }
-    header ul li {
+    nav ul li {
         padding: 10px;
     }
-    header ul li a {
+    nav ul li a {
         background: #fff;
         color: rgb(0, 0, 0);
         border-radius: 0px;
@@ -71,7 +71,12 @@
         margin-top: 0;
         padding: 0;
     }
-    header .logo {
+    nav ul li a:hover {
+        background-color: unset;
+        color: unset;
+        box-shadow: unset;
+    }
+    nav .logo {
         font-size: 36px;
     }
     .content {
@@ -161,10 +166,10 @@
 
 @media (max-width: 600px) {
     /* HEADER */
-    header {
+    nav {
         padding: 20px 30px;
     }
-    header .logo{
+    nav .logo{
         font-size: 28px;
     }
     .content .textBox a {
