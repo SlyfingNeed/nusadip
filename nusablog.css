@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap');
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +14,16 @@
 section {
     position: relative;
     width: 100%;
-    min-height: 120vh;
-    padding: 100px;
+    min-height: 110vh;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -36,7 +44,7 @@ header .logo {
     color: #000000;
 }
 
-header .blog span{
+header .logo span {
     color: #0057FF;
 }
 
@@ -65,20 +73,37 @@ header ul li a {
     font-size: 24px;
 }
 
-.back {
+header .back {
     position: relative;
-    margin-left: 40px;
     margin-top: 20px;
 }
 
+.fpbox {
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    margin-top: 170px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.fpbox {
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    margin-top: 170px;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .fpbox #satu {
-    position: absolute;
-    left: 40px;
-    top: 214px;
+    position: relative;
+    width: 100%;
 }
 
 .fpbox #satu img {
-    width: 478px;
+    position: relative;
+    width: 50%;
     height: 205px;
     box-shadow: inset 0px 50px 100px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -88,8 +113,9 @@ header ul li a {
 
 .fpbox #satu p {
     position: absolute;
-    left: 15px;
-    bottom: 10px;
+    width: 50%;
+    left: 20px;
+    bottom: 20px;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -101,11 +127,9 @@ header ul li a {
 }
 
 .fpbox #dua {
-    position: absolute;
-    width: 478px;
+    position: relative;
+    width: 50%;
     height: 205px;
-    left: 40px;
-    top: 439px;
 
     background: #292929;
     border-radius: 25px;
@@ -113,28 +137,28 @@ header ul li a {
 
 .fpbox #dua p {
     position: absolute;
-    left: 16px;
-    bottom: 7px;
+    width: 90%;
+    left: 20px;
+    bottom: 15px;
 
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 24px;
+    line-height: 33px;
 
     color: #FFFFFF;
 }
 
 .fpbox #tiga {
-    position: absolute;
-    right: 40px;
-    top: 214px;
+    position: relative;
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 0;
 }
 
 .fpbox #tiga img {
-    width: 664px;
-    height: 430px;
-    background: url(img/gudeg.jpg);
+    width: 50%;
     box-shadow: inset 0px 50px 100px 10px rgba(0, 0, 0, 0.5);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 25px;
@@ -150,8 +174,8 @@ header ul li a {
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 32px;
+    line-height: 40px;
 
     color: #FFFFFF;
 
@@ -160,37 +184,32 @@ header ul li a {
 
 .title {
     position: absolute;
-    left: 40px;
-    top: 25px;
 
     font-family: Nunito Sans;
     font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
+    font-weight: 800;
+    font-size: 56px;
     line-height: 65px;
 
     color: #0057FF;
 }
 
+.box {
+    display: flex;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
 .box .satu {
-    position: absolute;
     width: 270px;
     height: 300px;
-    left: 40px;
-    top: 150px;
-
     background: #99CFB2;
     border-radius: 25px;
 }
 
-.box #satu {
-    position: absolute;
-    left: 40px;
-    top: 150px;
-}
-
 .box .satu img {
-    position: absolute;
+    position: relative; 
     left: 32px;
     top: 70px;
 }
@@ -203,9 +222,9 @@ header ul li a {
 }
 
 .box .satu p {
-    position: absolute;
-    height: 99px;
-    top: 320px;
+    position: relative;
+    width: 270px;
+    top: 145px;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -215,21 +234,15 @@ header ul li a {
 }
 
 .box #satu p {
-    position: absolute;
-    height: 99px;
-    top: 320px;
+    position: relative;
+    width: 270px;
+    top: 15px;
 
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
-}
-
-.box #dua {
-    position: absolute;
-    left: 345px;
-    top: 150px;
 }
 
 .box #dua img {
@@ -240,9 +253,9 @@ header ul li a {
 }
 
 .box #dua p {
-    position: absolute;
-    height: 165px;
-    top: 320px;
+    position: relative;
+    width: 270px;
+    top: 15px;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -253,11 +266,6 @@ header ul li a {
     color: #000000;
 }
 
-.box #tiga {
-    position: absolute;
-    left: 650px;
-    top: 150px;
-}
 .box #tiga img {
     width: 270px;
     height: 300px;
@@ -266,9 +274,9 @@ header ul li a {
 }
 
 .box #tiga p {
-    position: absolute;
-    height: 165px;
-    top: 320px;
+    position: relative;
+    width: 270px;
+    top: 15px;
 
     font-family: Nunito Sans;
     font-style: normal;
@@ -277,12 +285,6 @@ header ul li a {
     line-height: 33px;
 
     color: #000000;
-}
-
-.box #empat {
-    position: absolute;
-    left: 955px;
-    top: 150px;
 }
 
 .box #empat img {
@@ -293,10 +295,9 @@ header ul li a {
 }
 
 .box #empat p {
-    position: absolute;
+    position: relative;
     width: 270px;
-    height: 99px;
-    top: 320px;
+    top: 15px;
 
     font-family: Nunito Sans;
     font-style: normal;
