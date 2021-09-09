@@ -155,6 +155,9 @@
     .container {
         padding: 50px 60px;
     }
+    .container-nusablog {
+        padding: 0 60px;
+    }
 }
 
 @media (max-width: 800px) {
