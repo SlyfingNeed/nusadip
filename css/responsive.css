@@ -97,6 +97,7 @@
         max-height: 250px;
         max-width: 250px;
         transform: translate(-5%, -50%);
+        object-fit: contain;
     }
     .thumb {
         bottom: 70px;
